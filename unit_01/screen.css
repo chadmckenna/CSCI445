@@ -1,0 +1,56 @@
+html, body {
+	margin: 2em 0;
+	background-color: #3366cc;
+}
+
+.container {
+	border: solid .3em #6633cc;
+	border-radius: .4em;
+	padding: 20px;
+	margin: 0 auto;
+	width: 70%;
+	background-color: #fff;
+}
+
+.left {
+	margin-top: 30px;
+	float: left;
+	width: 50%;
+}
+
+.right {
+	margin-top: 30px;
+	float: right;
+	width: 50%;
+}
+
+h1 {
+	margin: 0 inherit;	
+}
+
+img {
+	float: right;
+	max-width: 200px;
+}
+
+.clear {
+	clear: both;
+}
+
+table {
+	width: 70%;
+	float: left;
+}
+	tr {
+		background-color: #ccc;
+	}
+	td {
+		padding: 10px;
+	}
+	
+form {
+	width: 100%;
+}
+	input[type="text"] {
+		width: 100%;
+	}
