@@ -1,0 +1,42 @@
+Chad McKenna
+Reading 1
+
+1. (2) Explain the difference between strict and transitional DOCTYPE declarations.
+
+	Strict DOCTYPE is now considered the standard and default DOCTYPE. Transitional is used for legacy markup that cannot be easily
+	converted to comply with the new, strict DOCTYPE.
+
+2. (2) What is progressive enhancement?
+
+	Progressive enhancement is a strategy for web development that uses layered design that allows accessibility to a web page from
+	anywhere using any web browser on any platform. It separates the HTML markup from the stylesheets and the scripting platform.
+
+3. (4) Give a brief summary of the PNG, JPEG and GIF image formats, including when you might use each one (i.e., what's the strength of each format).
+
+	PNG and GIF allow for alpha transparency in the image where as JPEG does not. JPEG is often considered the standard and not all
+	browsers support PNG (IE6 and before don't officially support PNG). GIF doesn't allow for the same depth of colors that JPEG and PNG allow but GIF's are usually much smaller
+	in size and make great thumbnail images.
+
+4. (2) What is the purpose of the MIME type? When might you use one?
+
+	MIME is essentially a specification for sending non-ASCII formats over the intertubez (Internet). This includes images, audio, 
+	video, pdf,  xml, etc. Different MIME types include:
+	
+		application/atom+xml
+		application/json
+		application/javascript
+		application/pdf
+		image/jpeg
+		image/tiff
+		text/css
+		text/html
+		video/mpeg
+
+5. (2) Name two advantages of iframes over frames.
+
+	The iframe is actually supported in HTML5, which is an advantage. Also, iframes are easier to implement.
+
+6. (2) What is a character entity? Give an example.
+
+	A character reference is a way to write a specific character such as an ampersand without it interfering with the HTML markup.
+	For example &amp; and &quot; are two different character references. 
