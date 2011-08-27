@@ -17,11 +17,21 @@ html, body {
 	float: left;
 	width: 50%;
 }
+	.left .form-container {
+		float: left;
+		width: 100%;
+		border: solid .3em #39f;
+		background-color: #82a;
+	}
+
+	.left h2 {
+		float: left;
+	}
 
 .right {
 	margin-top: 30px;
 	float: right;
-	width: 50%;
+	width: 40%;
 }
 
 h1 {
@@ -30,7 +40,7 @@ h1 {
 
 img {
 	float: right;
-	max-width: 200px;
+	max-width: 98%;
 }
 
 .clear {
@@ -38,7 +48,7 @@ img {
 }
 
 table {
-	width: 70%;
+	width: 100%;
 	float: left;
 }
 	tr {
@@ -50,7 +60,14 @@ table {
 	
 form {
 	width: 100%;
+	padding: 10px;
 }
+	input {
+		font-size: 1em;
+		color: #30c;
+		padding: 5px;
+		border: solid .2em #a9c;
+	}
 	input[type="text"] {
-		width: 100%;
+		width: 70%;
 	}

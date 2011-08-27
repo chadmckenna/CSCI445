@@ -8,7 +8,8 @@
 	<div class="container">
 		<h1>This is a website!</h1>
 	
-		<div class="left">	
+		<div class="left">
+			<h2>This is a table!</h2>	
 			<table>
 		  		<tr>
 		      		<th>Party</th>
@@ -22,21 +23,41 @@
 		  			<td>This is in Column Dos</td>
 		    	</tr>
 			</table>
-			<form>
-				<input type="text" name="name" value="What is your name?" />
-				<input type="text" name="age" value="What is your age?" /> <br />
-				<br />
-				<input type="radio" name="sex" value="male" /> Male<br />
-				<input type="radio" name="sex" value="female" /> Female<br />
-				<br />
-				<input type="checkbox" name="vehicle" value="Horse" /> I have a horse<br />
-				<input type="checkbox" name="vehicle" value="Stagecoach" /> I have a stagecoach<br />
-				<br />
-				<input type="submit" value="submit" />
-				<input type="reset" value="reset" />
-			</form>
+			<h2>This is a form!</h2>
+			<div class="form-container">
+				<form>
+					<input type="text" name="name" value="What is your name?" />
+					<input type="text" name="age" value="What is your age?" /> <br />
+					<br />
+					<input type="radio" name="sex" value="male" />
+					<label for="male">Male</label><br />
+					<input type="radio" name="sex" value="female" />
+					<label for="female">Female</label><br />
+					<br />
+					<input type="checkbox" name="vehicle" value="Horse" /> 
+					<label for="horse">I have a Horse</label><br />
+					<input type="checkbox" name="vehicle" value="Stagecoach" />
+					<label for="stagecoach">I have a Stagecoach</label><br />
+					<br />
+					<select name="animal" id="animal">
+					  <optgroup label="Kittens">
+					    <option value="Tabby">Tabby</option>
+					    <option value="Persian">Persian</option>
+					  </optgroup>
+					  <optgroup label="Dogs">
+					    <option value="Labrador">Labrador</option>
+					    <option value="German Shepherd">German Shepherd</option>
+					  </optgroup>
+					</select><br />
+					<br />
+					<input type="submit" value="submit" />
+					<input type="reset" value="reset" />
+				</form>
+			</div>
 		</div>
 		<div class="right">
+			<h2>This is a right column!</h2>
+			<h2>This is a cougar!</h2>
 			<img src="cougar.jpg"/>
 		</div>
 		<div class="clear" />
