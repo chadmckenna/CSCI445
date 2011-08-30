@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	font-family: helvetica, "hevetica neue", sans-serif;
+}
+
+#header {
+	padding: 10px;
+	background-color: #95d;
+}
+
+#menu {
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 10px;
+	width: 30%;
+	background-color: #ccc;
+}
+
+#content {
+	color: #fff;
+	background-color: #103;
+	padding: 10px;
+	font-size: 1em;
+}
+	#content h2 {
+		font-size: 2em;
+	}
+
+img {
+	padding: 5px;
+	border: solid 4px #493;
+	background-color: #fff;
+}

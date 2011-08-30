@@ -1,0 +1,49 @@
+html, body {
+	margin: 0;
+}
+
+#header {
+	text-align: right;
+	padding: 10px;
+	background-color: #83a;
+}
+	#header h1 {
+		font-size: 3em;
+		margin: 5px 0 5px 0;
+	}
+
+#menu {
+	padding: 10px;
+	background-color: #ccc;
+}
+
+	#menu ul {
+		font-size: 1.4em;
+		list-style: none;
+		padding-left: .5em;
+	}
+		#menu ul li {
+			padding: 5px 0 0 inherit;
+		}
+	
+		#menu ul a {
+			font-size: .7em;
+			color: #921;
+			text-decoration: none;
+		}
+		
+		#menu ul a:hover {
+			color: #381;
+		}
+
+#content {
+	padding: 10px;
+	font-size: 1em;
+}
+	#content h2 {
+		font-size: 2em;
+	}
+
+img {
+	border: solid 6px #83a;
+}
