@@ -1,0 +1,43 @@
+Chad McKenna
+Reading 02
+
+
+(8) Provide an explanation of selectors in CSS. Be sure to describe type selectors, class and id selectors (what is the difference),
+ 	descendant and child selectors, and dynamic selectors. 
+
+	A type selector would be like "h2 { font-family: helvetica; }", it applies to a type of html tag. A class selector
+	applies to a tag that is designated with a class. For example, "<div class='ex'></div>" can be modified by the class
+	selector ".ex { width: 100%; }". A class selector should be used to style a tag that will have a universal styling
+	that will be repeated on other tags. An id selector is used for a tag that needs to have a very specific and unique
+	styling. For example, "<div class='ex' id='bear'></div>" can be modified first by the class selector but can then have
+	further specific modifications under the 'bear' id selector like this: "#bear { width: 95%; }". A child selector will
+	have a direct effect on any child of a certain tag that matches a certain criteria. For example, "body > p { padding: 10px; }"
+	will apply a padding of 10px to any paragraph tag that is a direct child of body. The descendent selector is very
+	similar but it is applied to two or more child selectors. For example, "body > div > p {padding: 12px; }" will apply
+	a padding of 12px to any paragraph that is a child of a div that is also a child of body. Dynamic selectors are selectors
+	that apply a style based on a user action. There are three dynamic selectors that can be applied :hover, :active, and :focus.
+	In the case of a link tag, a :hover dynamic selector can be applied to change the appearance of the link when a user
+	rolls over the link with their mouse. A dynamic selector can be applied like this: "a:hover { text-decoration: none; }". 
+
+(2) Explain inheritance and specificity.
+
+	Inheritance is similar to many other programming language, if an unstyled or styled tag is inside of a styled
+	tag, than the child tag will inherit any styles that are not specified inside its own style. Specificity has
+	to do with the way that browsers read your css, if there is a more specific styling of a given tag somewhere in
+	your stylesheet, it will automatically use that styling.
+
+(2) Explain the em unit.
+
+	The em unit is a scalable unit that allows a stylesheet to measure widths and heights based on the height
+	of a given font. 1 em is equal to the height of the font that is being used. If the font is 12px then one
+	em equals 12px, if the size is 24px then one em equals 24px.
+
+(2) Explain how the font-family property works.
+
+	It starts with the first font in the family and if that font is supported then it uses it, else it works
+	its way down the line until it finds a compatible font.
+
+(2) Explain the difference between margin and padding. What are collapsing margins?
+
+	Margin is the area AROUND a given tag that separates a tag from other tags. Padding is the area INSIDE
+	of the given tag that separates the outside of the tag from any contents on the inside of the tag.

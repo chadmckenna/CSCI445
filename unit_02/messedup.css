@@ -1,0 +1,10 @@
+body {
+	position: relative;
+}
+#menu {
+	position: fixed;
+}
+
+#nature {
+	position: fixed;
+}
