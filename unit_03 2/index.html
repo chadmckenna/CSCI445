@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="screen.css" />
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Velociraptors!</h1>
+	</div>
+	<div class="content">
+		<h2>The Velociraptor Party Page!</h2>
+		<img name="velociraptor" src="velociraptor.jpg" usemap="#vel" />
+		<map name="vel">
+			<area shape="rect" coords="50, 50, 150, 218" onMouseOver="zoom()" onMouseOut="original()">
+		</map>
+		<p>This is where we learn fun facts about velociraptors.</p>
+		<p>Velociraptors are killing machines. They kill more people a year than both sharks and bees. It has
+			been reported that velociraptors were actually the cause for the extinction of the dinosaurs (though
+			this has yet to be proven).
+			Velociraptors are known to hunt in packs and they have a top speed of 20 m/s. This means they
+			are approximately twice as fast as the fastest human being. Unfortunately, there is a 0% chance
+			of surviving a Velociraptor attack.</p>
+		<p>You can also sign up below to receive the velociraptor survival guide weekly email.</p>
+		<form name="subscribe" onsubmit="return validate()" action="subscribe.html">
+			<label>First Name:</label><br />
+			<input type="text" name="first" size="30" /><br />
+			<label>Last Name:</label><br />
+			<input type="text" name="last" size="30" /><br />
+			<label>Email:</label><br />
+			<input type="text" name="email" size="30" /><br />
+			<input type="submit" value="submit" />
+		</form>
+		<div class="clear"></div>
+	</div>
+</body>	
+</html>
