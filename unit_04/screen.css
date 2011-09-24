@@ -1,0 +1,10 @@
+html, body {
+	margin: 0;
+}
+
+.index-container, .container {
+	margin: 0 auto;
+	padding: 30px;
+	width: 75%;
+	height: 200px;
+}
