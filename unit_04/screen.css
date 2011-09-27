@@ -30,7 +30,7 @@ body {
 				padding: 7px 5px 0 0;
 				float: left;
 			}
-			.header .logo h1, .blog h1 {
+			.header .logo h1, .blog h1, .content h1 {
 				font-size: 2.4em;
 				color: #6C122B;
 				text-shadow: 0 1px 0 #B5627A;
@@ -45,7 +45,7 @@ body {
 		}
 			.header .nav ul, .footer-container .column-container ul {
 				list-style: none;
-				margin: 15px 0 0 0;
+				margin: 18px 0 0 0;
 				padding: 0;
 			}
 				.header .nav ul li {
@@ -87,6 +87,29 @@ body {
 			padding: 0 10px;
 			font-size: 3em;
 		}
+		
+	.content {
+		margin: 1em 0 0 0;
+		padding: 1em 0 0 0;
+		border-top: solid 1px #aaa;
+	}
+
+.pos {
+	font-style: oblique;
+}
+		.content h2 {
+			font-weight: 100;
+			margin: 1.3em 0 1.1em 0;
+		}
+		
+		.content dt {
+			font-size: 1.1em;
+		}
+		
+		.content dd {
+			padding: 5px 0 0 0;
+			font-size: 1em;
+		}
 	
 	.column {
 		width: 30%;
@@ -106,7 +129,7 @@ body {
 				margin-left: -0.4em;
 			}
 
-		.column p, .blog p {
+		.column p, .blog p, .content p {
 			line-height: 135%;
 			font-weight: 100;
 		}
@@ -143,7 +166,7 @@ body {
 			float: right;
 			padding: .3em 0 0 0;
 		}
-		.blog a {
+		.blog a, .content a {
 			color: #6C122B;
 			font-weight: 100;
 		}
