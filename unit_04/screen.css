@@ -18,11 +18,18 @@ body {
 
 	.header {
 		padding: 10px;
+		margin: 0 0 7px 0;
 		/*border-bottom: solid 1px #aaa;*/
 	}
 		.header .logo {
 			float: left;
+			width: 65%;
 		}
+			.header .logo img {
+				max-height: 90px;
+				padding: 7px 5px 0 0;
+				float: left;
+			}
 			.header .logo h1, .blog h1 {
 				font-size: 2.4em;
 				color: #6C122B;
@@ -31,20 +38,25 @@ body {
 		
 		.header .nav {
 			float: right;
+			width: 35%;
 			padding: 25px 0 0 0;
 			font-size: 1em;
+			text-align: right;
 		}
 			.header .nav ul, .footer-container .column-container ul {
 				list-style: none;
+				margin: 15px 0 0 0;
+				padding: 0;
 			}
 				.header .nav ul li {
 					display: inline-block;
+					padding: 0 3px 0 3px;
 				}
 			.header .nav a {
-				padding: 3px 10px;
 				color: #333;
 				font-weight: 100;
 				text-decoration: none;
+				padding: 0 7px 0 7px;
 			}
 			.header .nav a:hover {
 				border-bottom: solid 2px #6C122B;
