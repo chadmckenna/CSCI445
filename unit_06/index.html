@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="screen.css" />
+	<title>Chad's Party Purchase Page</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="nav">
+	    <a href="all_orders.php">View All Orders</a>
+	  </div>
+		<h1>Chad's Beer Shop</h1>
+		<form action="display_order.php" method="POST">
+			<table>
+				<tr>
+					<th>Beer</th>
+					<th>Quantity</th>
+					<th>Case Size</th>
+				</tr>
+				<tr>
+					<td>Coors Banquet</td>
+					<td>
+						<input type="text" name="coors" />
+					</td>
+					<td>
+						<select name="coors_size">
+							<option value="6">6 Pack</option>
+							<option value="12">12 Pack</option>
+							<option value="18">18 Pack</option>
+							<option value="24">24 Pack</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Pabst Blue Ribbon</td>
+					<td>
+						<input type="text" name="pbr" />
+					</td>
+					<td>
+						<select name="pbr_size">
+							<option value="6">6 Pack</option>
+							<option value="12">12 Pack</option>
+							<option value="18">18 Pack</option>
+							<option value="24">24 Pack</option>
+							<option value="30">30 Rack</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Trout Slayer</td>
+					<td>
+						<input type="text" name="trout_slayer" />
+					</td>
+					<td>
+						<select name="ts_size">
+							<option value="6">6 Pack</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>
+						<input type="submit" value="submit" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>

@@ -1,0 +1,43 @@
+body, html {
+	margin: 0;
+	font-family: helvetica, 'helvetica neu', arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.container {
+	width: 75%;
+	margin: 3em auto;
+	border: solid 3px #829;
+	padding: 2em;
+	background-color: #fff;
+}
+	table {
+		padding: 1em;
+	}
+	h1 {
+		margin: 0;
+	}
+	th {
+		color: #666;
+		text-align: left;
+	}
+	td {
+		padding: 3px 5px;
+	}
+	.order {
+		padding: 1em 0 1em 1em;
+	}
+	  .order-list {
+	    padding: 0 0 0 3em;
+	  }
+	    .order-list p {
+	      padding: 0;
+	      margin: 0;
+	    }
+	      .order-list p#price {
+	        padding: .25em 0 .25em 0;
+	        font-weight: 100;
+	      }
+  .nav {
+    float: right;
+  }
