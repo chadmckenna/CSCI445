@@ -1,2 +1,0 @@
--- SQL Schema For Our Database
--- Add shit here.
