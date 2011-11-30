@@ -60,7 +60,7 @@ session_start();
 		      </tr>
 		      <tr>
 		        <td>Donor</td>
-		        <td><input type="text" name="donor" /></td>
+		        <td><select name="donor"><option value="1">1</option></select></td>
 		      </tr>
 		      <tr>
 		        <td>Value</td>
