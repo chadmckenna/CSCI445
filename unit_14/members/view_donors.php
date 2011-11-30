@@ -5,7 +5,6 @@ $db = new mysqli(localhost, team04, apple, team04_cbtb_db);
 
 $results = $db->query("SELECT * FROM donors");
 ?>
-<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
