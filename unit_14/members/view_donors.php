@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = new mysqli('localhost:3306', 'jdinges', 'colosuss', 'cbtb_db');
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
 
 $results = $db->query("SELECT * FROM donors");
 ?>
@@ -42,7 +42,7 @@ $results = $db->query("SELECT * FROM donors");
 		    ?>
 		  </div>
 	    <h1>View Donors</h1>
-      <p><a href="add_donors.php">Add a donor.</a></p>
+      <p><a href="donors.php">Add a donor.</a></p>
 	    
 	    <h2>View donors</h2>
 	    <table>

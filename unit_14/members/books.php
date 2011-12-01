@@ -43,10 +43,6 @@ session_start();
 		    <h2>Add a new Book</h2>
 		    <table>
 		      <tr>
-		        <td>Cause</td>
-		        <td><input type="text" name="cause" /></td>
-		      </tr>
-		      <tr>
 		        <td>ISBN</td>
 		        <td><input type="text" name="isbn" /></td>
 		      </tr>
@@ -59,24 +55,8 @@ session_start();
 		        <td><input type="text" name="author" /></td>
 		      </tr>
 		      <tr>
-		        <td>Donor</td>
-		        <td><select name="donor"><option value="1">1</option></select></td>
-		      </tr>
-		      <tr>
 		        <td>Value</td>
 		        <td><input type="text" name="value" /></td>
-		      </tr>
-		      <tr>
-		        <td>Status</td>
-		        <td><input type="text" name="status" /></td>
-		      </tr>
-		      <tr>
-		        <td>For Sale?</td>
-		        <td><input type="text" name="for_sale" /></td>
-		      </tr>
-		      <tr>
-		        <td>Location</td>
-		        <td><input type="text" name="location" /></td>
 		      </tr>
 		      <tr>
 		        <td></td>

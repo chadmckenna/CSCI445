@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
 
 $books = $db->query("SELECT * FROM books");
 
@@ -21,7 +21,7 @@ $books = $db->query("SELECT * FROM books");
 				<ul>
 					<li><a href="books.php">Books</a></li>
 					<li><a href="donors.php">Donors</a></li>
-					<li><a href="donations.php">Donatations</a></li>
+					<li><a href="donations.html">Donatations</a></li>
 					<li><a href="privilages.html">Privilages</a></li>
 				</ul>
 			</div>
@@ -47,7 +47,7 @@ $books = $db->query("SELECT * FROM books");
 		        <th>Value</th>
 		        <th>Donor</th>
 		        <th>Cause</th>
-		        <th>Status</th>
+		        <th>Update</th>
 		      </tr>
 		    </thead>
 		    
@@ -57,11 +57,13 @@ $books = $db->query("SELECT * FROM books");
 		        $donors = $db->query("SELECT * FROM donors");
 		        
 		        $row = "<tr>";
+		        $row .= "<form action=\"add_donation.php\" method=\"get\">";
+		        $row .= "<input type=\"hidden\" name=\"book_id\" value=\"{$book['id']}\">";
 		        $row .= "<td>" . $book['title'] . "</td>";
 		        $row .= "<td>" . $book['ISBN'] . "</td>";
 		        $row .= "<td>" . $book['author'] . "</td>";
 		        $row .= "<td>" . $book['value'] . "</td>";
-		        $row .= "<td><select>";
+		        $row .= "<td><select name=\"donor_id\">";
 		        $row .= "<option value=\"0\">Nobody</option>";
 		        while ($donor = $donors->fetch_assoc()) {
 		          if ($book['donor_id'] == $donor['id']) {
@@ -72,9 +74,9 @@ $books = $db->query("SELECT * FROM books");
 		            $row .= "<option value=\"{$donor['id']}\"{$selected}>{$donor['name']}</option>";
 		        }
 		        $row .= "</select></td>";
-		        $row .= "<td><select><option value=\"1\">Cause Name Here</option></select></td>";
-		        $row .= "<td>" . $book['status'] . "</td>";
-		        $row .= "</tr>";
+		        $row .= "<td><select name=\"cause_id\"><option value=\"1\">Cause Name Here</option></select></td>";
+		        $row .= "<td><input type=\"submit\" value=\"update\"/></td>";
+		        $row .= "</form></tr>";
 		        echo $row;
 		      }  
 		      ?>

@@ -6,8 +6,8 @@ $name  	  = strip_tags($_POST['full_name']);
 $email		= strip_tags($_POST['username']);
 $password	= strip_tags($_POST['password']);
 
-$db = new mysqli("127.0.0.1:3306", "jdinges", "colosuss", "cbtb_db");
-if(!$db){die("Could not connect: ".mysql_error())};
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
+
 $result = $db->query("SELECT * FROM users WHERE email='{$email}'");
 $num_rows = mysqli_num_rows($result);
 

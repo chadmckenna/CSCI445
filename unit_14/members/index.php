@@ -44,9 +44,9 @@ if(!($_SESSION['logged_in'])) {
 		  <h2>General Summary:</h2>
 		  <p>Do Something:<p>
 		  <ul>
-		    <li><a href="books.html">View books in inventory or Add a book</a></li>
-		    <li><a href="donors.html">View all donors or Add Donors</a></li>
-		    <li><a href="donations.php">Fill an order</a></li>
+		    <li><a href="books.php">View books in inventory or Add a book</a></li>
+		    <li><a href="donors.php">View all donors or Add Donors</a></li>
+		    <li><a href="donations.html">Fill an order</a></li>
 		    <li><a href="privilages.html">User Privilages</a></li>
 		  </ul>
 		  <p>You have collected $NUMBER_OF_COLLECTED_BOOKS books. <a href="books.html">Add more books</a>.</p>

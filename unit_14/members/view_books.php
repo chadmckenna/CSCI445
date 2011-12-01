@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli('localhost:3306', 'jdinges', 'colosuss', 'cbtb_db');
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
 
 $results = $db->query("SELECT * FROM books");
 
