@@ -1,3 +1,9 @@
+<?php
+$db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+
+$books = $db->query("SELECT * FROM books");
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -46,7 +52,32 @@
 		    </thead>
 		    
 		    <tbody>
-
+          <?php
+		      while ($book = $books->fetch_assoc()) {
+		        $donors = $db->query("SELECT * FROM donors");
+		        
+		        $row = "<tr>";
+		        $row .= "<td>" . $book['title'] . "</td>";
+		        $row .= "<td>" . $book['ISBN'] . "</td>";
+		        $row .= "<td>" . $book['author'] . "</td>";
+		        $row .= "<td>" . $book['value'] . "</td>";
+		        $row .= "<td><select>";
+		        $row .= "<option value=\"0\">Nobody</option>";
+		        while ($donor = $donors->fetch_assoc()) {
+		          if ($book['donor_id'] == $donor['id']) {
+		            $selected = " selected=\"true\"";
+	            } else {
+	              $selected = "";
+	            }
+		            $row .= "<option value=\"{$donor['id']}\"{$selected}>{$donor['name']}</option>";
+		        }
+		        $row .= "</select></td>";
+		        $row .= "<td><select><option value=\"1\">Cause Name Here</option></select></td>";
+		        $row .= "<td>" . $book['status'] . "</td>";
+		        $row .= "</tr>";
+		        echo $row;
+		      }  
+		      ?>
 		    </tbody>
 		  </table>
       
