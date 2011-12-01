@@ -18,7 +18,7 @@ session_start();
 				<ul>
 					<li><a href="books.php">Books</a></li>
 					<li><a href="donors.php">Donors</a></li>
-					<li><a href="donations.html">Donatations</a></li>
+					<li><a href="donations.php">Donatations</a></li>
 					<li><a href="privilages.html">Privilages</a></li>
 				</ul>
 			</div>

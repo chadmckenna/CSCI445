@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+$db = new mysqli('localhost:3306', 'jdinges', 'colosuss', 'cbtb_db');
 
 $results = $db->query("SELECT * FROM donors");
 ?>
@@ -22,7 +22,7 @@ $results = $db->query("SELECT * FROM donors");
 				<ul>
 					<li><a href="books.php">Books</a></li>
 					<li><a href="donors.php">Donors</a></li>
-					<li><a href="donations.html">Donatations</a></li>
+					<li><a href="donations.php">Donatations</a></li>
 					<li><a href="privilages.html">Privilages</a></li>
 				</ul>
 			</div>
