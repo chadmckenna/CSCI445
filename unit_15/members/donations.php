@@ -7,7 +7,31 @@ if(!$_SESSION['logged_in']){
 
 $db = new mysqli(localhost, team04, apple, team04_cbtb_db);
 
-$books = $db->query("SELECT * FROM books");
+$author_order = "ASC";
+$title_order = "ASC";
+
+if ($_GET['author'] == "ASC") {
+  $addons .= "ORDER BY author ASC";
+  $author_order = "DESC";
+} else if ($_GET['author'] == "DESC") {
+  $addons .= "ORDER BY author DESC";
+}
+
+if ($_GET['title'] == "ASC") {
+  $addons .= "ORDER BY title ASC";
+  $title_order = "DESC";
+} else if ($_GET['title'] == "DESC") {
+  $addons .= "ORDER BY title DESC";
+}
+
+if (isset($_GET['donor_id'])) {
+  $donor_id = strip_tags($_GET['donor_id']);
+  if ($donor_id != "null") {
+    $addons .= "WHERE donor_id={$donor_id}";
+  }
+}
+
+$books = $db->query("SELECT * FROM books {$addons}");
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
@@ -53,14 +77,31 @@ $books = $db->query("SELECT * FROM books");
 		  <table>
 		    <thead>
 		      <tr>
-		        <th>Book Title</th>
+		        <th><a href="?title=<?php echo $title_order ?>">Book Title</th>
 		        <th>ISBN</th>
-		        <th>Author</th>
+		        <th><a href="?author=<?php echo $author_order ?>">Author</a></th>
 		        <th>Value</th>
-		        <th>Donor</th>
+		        <th>
+		          <form name="donor" action="donations.php" method="get">
+  		          <select name="donor_id"  onChange="document.donor.submit()">
+  		            <option value="null">Donor</option>
+  		            <?php
+  		            $donors = $db->query("SELECT * FROM donors");
+
+  		            while ($donor = $donors->fetch_assoc()) {
+    		            if ($_GET['donor_id'] == $donor['id']) {
+    		              $selected = " selected=\"true\"";
+    	              } else {
+    	                $selected = "";
+    	              }
+    		              echo "<option value=\"{$donor['id']}\"{$selected}>{$donor['name']}</option>";
+    		          }
+  		            ?>
+  		          </select>
+  		        </form>
+		        </th>
 		        <th>Cause</th>
 		        <th>Update</th>
-		      </tr>
 		    </thead>
 		    
 		    <tbody>
