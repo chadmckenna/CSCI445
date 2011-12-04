@@ -9,7 +9,7 @@ if(!$_SESSION['logged_in']){
 $username = strip_tags($_POST['username']);
 $password = md5(strip_tags($_POST['password']));
 
-$db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
 
 //if(!$db){die("Could not connect: ".mysql_error())};
 

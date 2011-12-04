@@ -15,7 +15,7 @@ $status   = $_GET['status'];
 $for_sale = $_GET['for_sale'];
 $location = $_GET['location'];
 
-$db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
 
 $stmt = $db->prepare("INSERT INTO books (isbn, title, author, value) VALUES (?, ?, ?, ?)");
 

@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 session_start();
 
 if(!$_SESSION['logged_in']){
@@ -6,6 +7,9 @@ if(!$_SESSION['logged_in']){
 }
 
 $db = new mysqli(localhost, team04, apple, team04_cbtb_db);
+=======
+$db = new mysqli("localhost:3306", "jdinges", "colosuss", "cbtb_db");
+>>>>>>> df3749cb5dd1da0142bcd49c274454aa09faac7a
 
 $results = $db->query("SELECT * FROM books");
 
